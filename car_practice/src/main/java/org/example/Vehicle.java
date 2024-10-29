@@ -1,9 +1,9 @@
+package car_practice.src.main.java.org.example;
+
 public class Vehicle{
 
     public Vehicle(int numWheels){
         this.setNumWheels(numWheels);
-
-
     }
     public int getNumWheels() {
         return numWheels;
