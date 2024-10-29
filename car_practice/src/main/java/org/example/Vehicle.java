@@ -34,6 +34,4 @@ public class Vehicle{
     }
 
     private int maxSpeed;
-
-
 }
