@@ -1,6 +1,6 @@
 package car_practice.src.main.java.org.example;
 
-public class Car extends MotorisedVehicle{
+public class Car extends MotorisedVehicle implements Functionality{
 
     private int numOfDoors;
 
@@ -25,5 +25,12 @@ public class Car extends MotorisedVehicle{
         StringBuilder carService = new StringBuilder();
         carService.append("change oil ");
         return carService.toString();
+    }
+
+    @Override
+    public String Sound() {
+        StringBuilder carSound = new StringBuilder();
+        carSound.append("honk honk");
+        return carSound.toString();
     }
 }

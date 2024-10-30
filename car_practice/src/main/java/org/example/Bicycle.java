@@ -1,6 +1,6 @@
 package car_practice.src.main.java.org.example;
 
-public class Bicycle extends Vehicle{
+public class Bicycle extends Vehicle implements Functionality{
 
     public Bicycle(){
         super(2);
@@ -26,5 +26,12 @@ public class Bicycle extends Vehicle{
         StringBuilder cycleService = new StringBuilder();
         cycleService.append("change wheels ");
         return cycleService.toString();
+    }
+
+    @Override
+    public String Sound() {
+        StringBuilder cycleSound = new StringBuilder();
+        cycleSound.append("ding ding");
+        return cycleSound.toString();
     }
 }

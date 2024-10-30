@@ -1,6 +1,6 @@
 package car_practice.src.main.java.org.example;
 
-public class Motorbike extends MotorisedVehicle {
+public class Motorbike extends MotorisedVehicle implements Functionality {
 
 
     @Override
@@ -23,5 +23,12 @@ public class Motorbike extends MotorisedVehicle {
 
     public void setHasSideCar(Boolean hasSideCar) {
         this.hasSideCar = hasSideCar;
+    }
+
+    @Override
+    public String Sound() {
+        StringBuilder mbSound = new StringBuilder();
+        mbSound.append("vroom vroom");
+        return mbSound.toString();
     }
 }
