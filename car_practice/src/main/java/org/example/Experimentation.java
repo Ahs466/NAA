@@ -14,8 +14,10 @@ public class Experimentation {
             System.out.println(vehicleObject.service());
         }
 
+        Functionality[] listOfSounds = {b1, b2, c1, mb1};
 
+        for (Functionality soundObject: listOfSounds){
+            System.out.println("The type of sound: " + soundObject.Sound());
+        }
     }
-
-
 }
