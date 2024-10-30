@@ -3,6 +3,16 @@ package car_practice.src.main.java.org.example;
 public class Experimentation {
     public static void main(String[] args) {
         Bicycle b1 = new Bicycle();
-        System.out.println(b1.getNumWheels());
+        Bicycle b2 = new Bicycle(3);
+
+        Car c1 = new Car(4,4);
+
+        Car c2 = new Car(4,2);
+
+
+        Vehicle[] vehiclesList = {b1,c2};
+        for(Vehicle vehicleObject: vehiclesList){
+            System.out.println(vehicleObject.service());
+        }
     }
 }

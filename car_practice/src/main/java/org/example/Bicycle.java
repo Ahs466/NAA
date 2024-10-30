@@ -6,6 +6,10 @@ public class Bicycle extends Vehicle{
         super(2);
     }
 
+    public Bicycle(int numWheels){
+        this.setNumWheels(numWheels);
+    }
+
     public int getNumGears() {
         return numGears;
     }

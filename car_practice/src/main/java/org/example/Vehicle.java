@@ -8,6 +8,10 @@ public abstract class Vehicle{
         this.setNumWheels(numWheels);
     }
 
+    public Vehicle(){
+
+    }
+
     private int numWheels;
     private int numSeats;
     private int maxSpeed;
