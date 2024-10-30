@@ -1,6 +1,6 @@
 package car_practice.src.main.java.org.example;
 
-public class MotorisedVehicle extends Vehicle {
+public abstract class MotorisedVehicle extends Vehicle {
 
     public int getMileage() {
         return mileage;

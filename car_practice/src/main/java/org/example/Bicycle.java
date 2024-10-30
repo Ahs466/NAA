@@ -17,4 +17,10 @@ public class Bicycle extends Vehicle{
     private int numGears;
 
 
+    @Override
+    public String service() {
+        StringBuilder cycleService = new StringBuilder();
+        cycleService.append("change wheels ");
+        return cycleService.toString();
+    }
 }

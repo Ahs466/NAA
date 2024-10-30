@@ -19,4 +19,11 @@ public class Car extends MotorisedVehicle{
     public void setNumOfDoors(int numOfDoors) {
         this.numOfDoors = numOfDoors;
     }
+
+    @Override
+    public String service() {
+        StringBuilder carService = new StringBuilder();
+        carService.append("change oil ");
+        return carService.toString();
+    }
 }

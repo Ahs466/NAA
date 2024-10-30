@@ -1,6 +1,15 @@
 package car_practice.src.main.java.org.example;
 
 public class Motorbike extends MotorisedVehicle {
+
+
+    @Override
+    public String service() {
+        StringBuilder motorbikeService = new StringBuilder();
+        motorbikeService.append("fix gears ");
+        return motorbikeService.toString();
+    }
+
     public Motorbike(int numWheels){
         super(numWheels);
     }
